@@ -12,6 +12,7 @@ let timerInterval;
 
 
 
+flatpickr('#datetime-picker', options);
 
 const options = {
   enableTime: true,
@@ -32,7 +33,6 @@ const options = {
   },
 };
 
-flatpickr('#datetime-picker', options);
 
 startButton.addEventListener('click', () => {
   if (timerInterval) clearInterval(timerInterval);
